@@ -1,1 +1,3 @@
 # connectingdots
+* Purpose
+* Scope
