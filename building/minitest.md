@@ -22,8 +22,8 @@ end
 ```
    Alternatively, define a method explicityly.
 ```ruby
-def a_test
+def test_something
   assert true
 end
 ```
-   These are equivalent. But the latter allows us to further organize methods into modules.
+   These are equivalent. But the latter allows us to further organize methods into modules. The method name has to start with test.
