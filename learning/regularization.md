@@ -20,3 +20,5 @@ This is how to deal with the issue of overfitting/insufficient data.
   issue due to overfitting. There are other ways to add these pseudo points, especially for high-dimensional cases. For example, in 
   the landmark points idea, the introduction of new features (similarity between sample and landmark points) suggests the location 
   of these pseudo points. This picture may be limited to linear model as well.
+* Another way to put it is that regularization adds Lagrange multiplier terms with the "assumed" constraints on theta.
+* Penalty term could be l1 norm (Lasso), Eculid norm or others.
