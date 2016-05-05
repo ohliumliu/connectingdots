@@ -22,3 +22,4 @@ This is how to deal with the issue of overfitting/insufficient data.
   of these pseudo points. This picture may be limited to linear model as well.
 * Another way to put it is that regularization adds Lagrange multiplier terms with the "assumed" constraints on theta.
 * Penalty term could be l1 norm (Lasso), Eculid norm or others.
+* Regularization may reveal some features with 0 coefficients. These features are likely unnecessary, but this can be tuned by lambda.
