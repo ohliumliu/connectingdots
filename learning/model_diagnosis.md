@@ -20,3 +20,4 @@ If yes, then the set is probably complete. If not, then it is probably incomplet
 * Training curve.
 Plot training or cross-validation error as a function of training data set size. It helps to determine whether it's underfitting or
 overfitting.
+* If it turns out some features have an extremely high coefficients, it may be a "signature" and should be removed.
