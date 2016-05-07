@@ -1,8 +1,8 @@
 * If correlation can be detected between feature sets, new feature can be defined to replaced the correlated ones.
   * If x1 is approximately linearly correlated with x2, then one can project (x1, x2) to the line fitted from x1 and x2 
    and use the new line as an axis.
-  * The method to find the correction dimension is through principle component analysis. This is essentially the same as 
-  finding the principle axis of inertia tensor with each data point representing a unit mass point. 
+  * The method to find the correction dimension is through principal component analysis. This is essentially the same as 
+  finding the principal axis of inertia tensor with each data point representing a unit mass point. 
   See also prolate and oblate tops. The axis with the bigger eigenvalues are retained and can be used to construct a 
   hyperplane (linear space) on to which data points can be projected to have a smaller dimension.
   * Use mean and standard deviation to scale the feature first. 
