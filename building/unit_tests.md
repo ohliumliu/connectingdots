@@ -7,7 +7,7 @@
 * gem 'mocha': This gem is used to stub or mock an object.
   *  require 'mocha/test_unit'
   * Code example
-```
+```ruby
 http_client = OpenUriClient.new # a mock object
 http_client.expects(:get).returns(mock_xml) #provide mock return for a particular method
 ```
@@ -20,6 +20,15 @@ extract all the ASIN numbers and saved as an array (using w%{a b c d} for easy c
 with the result from calling call_browse_node_api. Note that the returned value of call_browse_node_api is a node set which 
 can be converted to array by a mapping
 
-```
+```ruby
 parsed_array = parsed_node_set.map {|node| node.content}
+```
+* Test whether a method is called
+```ruby
+instance = class.new
+instance.expect(:instance_method_to_be_called).once
+instance.instance_method_to_be_called # => no failure
+
+instance.expect(:another_method).once
+instance.instance_method_to_be_called # => failure
 ```
