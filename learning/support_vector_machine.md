@@ -20,6 +20,7 @@
 interpretation of [Regularization](regularization.md)__
 * Landmark point idea works well with SVM (Linearized cost function). It also works with other algorithm mathematically, 
   but not as efficient computationally as in SVM.
+* A more detailed discussion: http://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf
 * The variance in Gaussian kernel is a parameter chosen by the user. Smaller variance in Gaussian -> higher requirement to fit 
   the sample points -> potential of overfitting (higher variance in fitting result). Easy to remember the conclusion.
 * Large set, too many feature: not very good for svm.
