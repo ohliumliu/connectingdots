@@ -7,5 +7,5 @@ In html.erb, the content from instance variables is eascaped, thus not rendered 
 
 If `@user.notes.html` is used, html tags will become something like `&lt...`
 
-An alternative is to use .raw which also handles nil better. But neither one is safe from xss attack, so we need to be careful.
+An alternative is to use raw (raw @user.notes) which also handles nil better. But neither one is safe from xss attack, so we need to be careful.
 https://www.tigraine.at/2012/08/23/when-to-use-raw-and-when-to-use-html_safe
