@@ -27,3 +27,4 @@ notice3.attr("class", "alert alert-notice").append("notice3");
 $(".top_alert").append(notice3)
 $(".bottom_alert").append(notice3)
 ```
+[jsfiddle demo](https://github.com/ifad/data-confirm-modal)
