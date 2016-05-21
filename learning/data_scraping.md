@@ -27,8 +27,20 @@
 ```
 * Display
   Use HTML package to show selected portion of the page
+
   ```python
   from IPython.core.display import HTML
   list_html = str(soup.find("ul", {"class": "info"})) # convert the output of find (a soup tag) to str
   HTML(list_html) # show html
   ```
+* Get data
+ Use get_text to get the content of a tag
+
+#### Pandas
+ * Constructor:
+ ```python
+   import pandas as pd
+   df = pd.DataFrame(data, columns = col-name, index = index-name) # data is an array
+   df = pd.DataFrame(dict, index=index-name) # dict is a hash with keys being the col-name
+ ```
+ * More on [Pandas](pandas.md)
