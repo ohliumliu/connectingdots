@@ -9,3 +9,8 @@ gem 'administrate', github: 'hayesr/administrate', branch: 'rails5_compat'
 ```rails
 rails generate administrate:views:index
 ```
+* To add new resources:
+  * Add route with resources scope
+  * Add controller
+  * Add dashboard file
+  * [optional] add view
