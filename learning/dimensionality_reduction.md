@@ -18,3 +18,11 @@
   * PCA can help visualize the data.
   * Don't use PCA to address overfitting. It throws away variance. Use regularization. __This is debatable I think.__
   * Don't use PCA at first trial. Use it when have to.
+ * A summary of methods
+  * Linear methods: it fails when linear regression fails -- error is not normally distributed.
+   * PCA
+   * SVD
+   * MDS: Multi-dimensional scaling.
+  * Nonlinear methods:
+   * IsoMap
+   * Local linearly embedding
