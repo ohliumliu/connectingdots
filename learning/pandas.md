@@ -3,6 +3,7 @@
   * DataFrame is indexed and each row corresponds to each index. `df.iloc(int)` or `df.loc(index_name)` for row accessing.
   * DataSeries is also indexed.
   * DataFrame dot or dictionary notation is for column access.
+  
 ### Split-apply-combine pattern
   * Split: Oftentimes the df is a table, with two feature as index and column names. The purpose of split is to get something like 
            a relational database.
@@ -51,5 +52,12 @@
   PATHSTART="."
   sqlite_db = sq3.connect(os.path.join(PATHSTART, dbfile))
   ```
-  
-  
+  * view vs copy
+     [Reference](http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy)
+  ```python
+  df.loc[labels, cols] # this returns a view of the dataframe. It can be used for both display and assignment. This is prefered.
+  df[labels][cols] # this may or may not return a view. It's ok for display, but not safe for assignment.
+  df.loc[labels][cols] # this returns a view. It's ok for display. It's NOT ok for assignment.
+  ```
+  The reason behind this is that the last two operations are two steps chained together. When used for assignment, the second operation
+  may be operated on a copy of the first operation. In the first case, `.loc` can guarantee that operations are applied to `df` itself.
