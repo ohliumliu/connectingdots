@@ -54,6 +54,7 @@
   ```
   * view vs copy
      [Reference](http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy)
+
   ```python
   df.loc[labels, cols] # this returns a view of the dataframe. It can be used for both display and assignment. This is prefered.
   df[labels][cols] # this may or may not return a view. It's ok for display, but not safe for assignment.
