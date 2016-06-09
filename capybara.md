@@ -39,6 +39,10 @@ end
 ```
 Capybara's in-code comment is actually very helpful ([Github](https://github.com/jnicklas/capybara/blob/master/lib/capybara/node/matchers.rb#L201)).
 
+### Issues with timing
+After an action, it might take some time for an element to show up. If we use `page.find("css selector")`, capybara
+can wait for a certain period of time to accommodate this delay. It seems that other matchers may not be so smart in this aspect, at least click_link command is not.
+
 ### Browser
 Capybara simulates operations on a browser, and it supports several browsers, called driver in this context. The default doesn't
 support javascript, so we need to use an alternative. I am using [PhantomJS with Poltergeist](phantomjs.md).
