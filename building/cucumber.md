@@ -19,3 +19,12 @@ by default, all .rb file under features/ folder (recursively) are accessible fro
 
 ### Good reference
 https://github.com/cucumber/cucumber/wiki/Cucumber-Backgrounder
+
+### About database
+In cucumber test, its connection to the database is a separate thread. `database_cleaner` provides several strategies:
+  * null strategy: do nothing. Any changes to the database leave there.
+  * transaction: roll back any database operation in the test.
+  * truncation: start with clean database for each test
+
+For example, in a scenario, if some database operation is performed in background, it will be rolled back before any feature
+test starts unless null strategy is used.
