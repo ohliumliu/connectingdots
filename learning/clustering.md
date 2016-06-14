@@ -1,4 +1,4 @@
-* K-mean method
+### K-mean method
   Randomly initialize k points (focus points) in the feature space and then repeat the following
   * Cluster assignment: Assign each sample point to one of the k clusters based on its distance to the k points. 
   This step minimizes the distortion (average distance between the sample points and the corresponding focus points) 
@@ -19,3 +19,11 @@
 * Choose the number of clusters
   * Check cost function vs number of clusters and look for "elbow". May not be obvious.
   * Based on the requirement of next step.
+  *
+
+### Mean-shift method
+  For each data point, do the following:
+  * Consider the points within a certain radius from the point and find the mean.
+  * Consider the pints within a certain raidus from the mean, and find the new mean.
+  * Until the mean positions doesn't change.
+  For a given distance, there are a limited number of outcomes as the man.
