@@ -15,7 +15,7 @@
   * Apply: Analyze the data based on a certain column. `group_by` is often used. The criteria could be as simple as col name
     or as complex as a function of all features. The returned value is a GroupBy object.
   
-  * Combine: Apply aggregator methods on GroupBy objects (such as mean) to get statistics of each group. The result is a data frame.
+  * Combine: Apply aggregator methods on GroupBy objects (such as mean) to get statistics of each group. The result is a data frame. Another way to understand this: groupby results in the several datafames (groups) held together. In generate, one can call `apply(method)` on a groupby object to apply the given method to each frame. The method takes a dataframe as input, and return the result. This is similar to callback.
 ### Useful commands
   * query
   
