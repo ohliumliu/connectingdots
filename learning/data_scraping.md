@@ -35,7 +35,13 @@
   ```
 * Get data
  Use get_text to get the content of a tag
-
+* [pattern module](http://www.clips.ua.ac.be/pattern)
+Code example
+```python
+    url = 'http://www.govtrack.us/data/congress/113/votes/2013'
+    reg = requests.get(url)
+    elements = web.Element(req.text).by_tag('a')
+```
 #### Pandas
  * Constructor:
  ```python
