@@ -11,7 +11,7 @@
 * Harvard CS109
   * [2015 class website](https://www.google.com/url?q=http://cs109.github.io/2015/&sa=U&ved=0ahUKEwiXubPeyIPOAhVP6mMKHcsUCnIQFggUMAA&sig2=Cj7h25-VEc--AGIBIQqZ7A&usg=AFQjCNF0qHhPZMQDkPIIgDzXSH9nhLZsbQ)
   * [2013 homework](https://github.com/ohliumliu/content)
-  * [Summary](learning/cs109.md)
+  * [Summary](https://github.com/ohliumliu/connectingdots/blob/master/learning/cs109.md)
  
 * EdX: 
   * [CS105.X, Introduction to Apache Spark](https://www.edx.org/course/introduction-apache-spark-uc-berkeleyx-cs105x)
