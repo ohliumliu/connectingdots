@@ -26,3 +26,6 @@ PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=notebook pyspark
 ```
 #### Connect remotely
 After starting pyspark with jupyter notebook as the driver, ssh from another PC with port forwarding 8888 to localhost:8888. The other PC can get access to jupyter notebook from `localhost:8888`.
+
+#### Spark UI
+SparkUI is available from 4040. It contains a lot of useful information on storage and processing.
