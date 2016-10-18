@@ -23,6 +23,8 @@ It's easy to run pyspark using ipython (a better shell than bare python) or jupy
 PYSPARK_DRIVER_PYTHON=ipython pyspark  # ends up in an ipython shell
 PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=notebook pyspark 
 # start jupyter notebook at localhost:8888 
+PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=0.0.0.0 --port=8080 --no-browser" pyspark 
+# use this line to provide a notebook server on cloud 9
 ```
 #### Connect remotely
 After starting pyspark with jupyter notebook as the driver, ssh from another PC with port forwarding 8888 to localhost:8888. The other PC can get access to jupyter notebook from `localhost:8888`.
