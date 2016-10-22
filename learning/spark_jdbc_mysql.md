@@ -29,4 +29,20 @@ categories_df.write.jdbc(url=url, table="categories", mode = "append", propertie
     "password": ""
   }
   ```
- 
+  
+#### Another way to start pyspark with mysql driver
+```shell
+pyspark --packages mysql:mysql-connector-java:5.1.38
+```
+In this way, one doesn't need to download the jar files for the jdbc driver. But one has to use the following to read a database, and it cannot write to the database. 
+```python
+# read a table from database.
+
+products_df = sqlContext.read.format("jdbc").options(
+url = url,
+driver="com.mysql.jdbc.Driver",
+dbtable="products",
+user="root",
+password=""
+).load()
+```
