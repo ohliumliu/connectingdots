@@ -7,7 +7,16 @@
 
 #### Useful commands
 
-* Start a docker
+* Installation on AWS EC2
+```
+[ec2-user]$ sudo yum update -y
+[ec2-user]$ sudo yum install -y docker
+[ec2-user]$ sudo service docker start
+[ec2-user]$ sudo usermod -a -G docker ec2-user // allow ec2-user to run docker
+[ec2-user]$ exit and connect again
+```
+
+* Start a container
 `docker run -d container-to-be-used` 
   * The great thing about docker is that container-to-be-run is normally registered online, and can be
 found automatically. The container has the instructions required to set up the environment. Normally, when it is run for the first time,
